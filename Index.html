@@ -1,0 +1,94 @@
+<?php
+
+require_once ("conexao.php");
+require_once ("login.php");
+
+?>
+
+
+
+<!DOCTYPE html>
+
+
+<html lang="pt_BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@0,700;1,300&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+
+    <title>Data Base Pratice</title>
+
+</head>
+<body>
+    
+    <div id = "page-home">  
+    
+     
+
+         <div class = "content">
+
+            <a href="Index.html">
+                
+            </a>
+
+            <header class = "barra">
+                    <img class="logo" src="assets/logo.png" alt="logo" > </img>
+                    <p class="nome"></p>
+
+                 <a class="funcionario" href="#"> 
+                     Funcionário
+                 </a>
+            </header>
+
+            <main>
+                <h1 class="red">Seu software para transferência de dados</h1>
+                <p>Eficiência, praticidade e segurança na hora de armazenar o que é mais importante, seus dados!</p>
+        
+                <a href= "#"> 
+                  
+                    <strong>Saber mais sobre a ferramenta </strong>
+                </a>
+
+            </main>
+
+
+        </div>
+    </div>
+
+    <div id ="modal" class ="hide">
+        <div class = "content">
+            <div class="header">
+                <h6>Iniciar sessão</h6>
+                <a href="#">Fechar</a>
+            </div>
+
+                <form method="post" action="login.php">
+
+                    <label for="login">Digite seu email</label>
+                    <input  type="email" name ="EMAIL" placeholder = "Digite seu email" autocomplete="on" >
+
+                    <label for="password">Digite sua senha</label>     
+                    <input  type="password" name ="SENHA" placeholder = "Digite sua senha" autocomplete="on">
+
+                    <div class="password field">    
+                
+                        <button type="submit" class="btn">Entrar</button>
+
+                    </div>
+                </form>
+        </div>
+    </div>
+
+
+    <script src="scripts/index.js"></script>
+
+</body>
+</html>

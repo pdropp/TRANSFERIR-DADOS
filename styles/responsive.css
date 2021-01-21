@@ -1,0 +1,43 @@
+@media (max-width: 900px)  {
+    #page-home {
+        
+    background-size:cover;
+    
+        
+        
+    }
+
+    #page-home .content {
+
+        align-items: center;
+        text-align: center;
+        
+
+    }
+
+    #page-home header .funcionario{
+
+        position: absolute; 
+        bottom: -17%;
+
+        padding: 1%;
+        border-style: solid;
+        border-radius: 8px;
+
+        align-items:center;        
+
+        
+
+
+        left: 46%;
+        transform: translateX(-30%);
+
+     
+
+    }
+  
+    #page-home main {
+        align-items: center;
+    }
+
+}
